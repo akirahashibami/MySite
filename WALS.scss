@@ -342,3 +342,69 @@ main{
     }
   }
 }
+
+#portfolio{
+  width: 100%;
+  background-color: #eceff1;
+
+  .portfolio-contents{
+    width: 920px;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+
+    h1{
+      font-size: 32px;
+      padding-bottom: 8px;
+    }
+
+    span{
+      width: 70px;
+      border-bottom: 3px solid #ec715f;
+    }
+
+    p{
+      padding: 30px 0;
+      font-size: 16px;
+    }
+
+    .image-box{
+      display: flex;
+      flex-wrap: wrap;
+
+      .pib{
+        width: 300px;
+        height: 250px;
+        margin: 0 10px 10px 0;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .pib:nth-child(3){
+        margin-right: 0;
+      }
+      .pib:nth-child(6){
+        margin-right: 0;
+      }
+
+      .portfolio-image-box1{
+        background-image: url(./img/sketch.jpg);
+      }
+      .portfolio-image-box2{
+        background-image: url(./img/websuku.png);
+      }
+      .portfolio-image-box3{
+        background-image: url(./img/write.jpg);
+      }
+      .portfolio-image-box4{
+        background-image: url(./img/webcamp.png);
+      }
+      .portfolio-image-box5{
+        background-image: url(./img/talk.jpg);
+      }
+      .portfolio-image-box6{
+        background-image: url(./img/webcamp-mother.png);
+      }
+    }
+  }
+}
