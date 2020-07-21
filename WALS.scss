@@ -286,19 +286,23 @@ svg:not([fill]) {
 // 記述ここから
 *{
   list-style: none;
-  text-decoration: none;
 }
 
 header{
   width: 100%;
   background-color: #ec715f;
   height: 70px;
+  text-decoration: none;
 
   #header{
     width: 1024px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+
+    i{
+      display: none;
+    }
 
     .nav-left{
       img{
@@ -553,9 +557,170 @@ main{
       a{
         font-size: 50px;
         padding-right: 20px;
-        text-decoration: none;
         color: #000;
       }
     }
   }
+}
+
+footer{
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  background-color: #ec715f;
+  font-size: 16px;
+  color: #fafafa;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 767px){
+
+  body{
+    width: 100%;
+  }
+  header{
+    height: 50px;
+    padding: 0 5%;
+
+    #header{
+      width: 100%;
+
+      .nav-left{
+        img{
+          height: 50px;
+        }
+      }
+      .nav-right{
+        display: none;
+      }
+      i{
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        line-height: 50px;
+      }
+    }
+  }
+  main{
+    height: 650px;
+    background-image: url(./img/code.png);
+
+    .text-box{
+      padding-top: 200px;
+      color: #fafafa;
+
+      h1{
+        padding-bottom: 10px;
+        font-size: 40px;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+
+  #portfolio{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+
+    .portfolio-contents{
+      width: 50vw;
+      display: block;
+    }
+
+    .image-box{
+      flex-direction: column;
+      margin: 0 auto;
+
+      .portfolio-image-box1{
+        display: none;
+      }
+      .portfolio-image-box3{
+        display: none;
+      }
+      .portfolio-image-box5{
+        display: none;
+      }
+    }
+  }
+
+  #feature{
+    width: 100%;
+    padding: 0 5%;
+
+    .feature-contents{
+      width: 50vw;
+      display: block;
+      margin: auto;
+      text-align: center;
+    }
+
+    .strength{
+      margin-bottom: 30px;
+
+      p{
+        text-align: left;
+      }
+    }
+  }
+
+  #profile{
+    width: 100%;
+    padding: 0 5%;
+
+    .profile-wrap{
+      padding: 90px 0;
+      width: 90%;
+    }
+
+    .profile-box{
+      display: block!important;
+
+      .profile-image{
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+
+      .profile-text{
+        text-align: center;
+      }
+    }
+  }
+
+  #contact{
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-right: 5%;
+    padding-left: 5%;
+
+    h1{
+      font-size: 32px;
+      padding-bottom: 8px;
+    }
+    p{
+      font-size: 16px;
+      padding: 30px 0;
+    }
+
+    .contact-wrap{
+      display: block;
+      width: 50vw;
+      margin: 0 auto;
+      text-align: center;
+
+      .address{
+        margin-bottom: 20px;
+      }
+      .sns-box{
+
+        a{
+          padding-top: 5px;
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+
 }
